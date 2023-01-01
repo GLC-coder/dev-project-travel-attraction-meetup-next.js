@@ -5,7 +5,7 @@ const handler = async (req, res) => {
   if (req.method === "POST") {
     const data = req.body;
     // const { title, image, address, description } = data;
-    const DB = process.env.DATABASE.replace("<password", process.env.PASSWORD);
+    const DB = process.env.DATABASE.replace("<password>", process.env.PASSWORD);
     const client = await MongoClient.connect(DB);
 
     const db = client.db("jason");
