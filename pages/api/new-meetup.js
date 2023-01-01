@@ -5,9 +5,9 @@ const handler = async (req, res) => {
   if (req.method === "POST") {
     const data = req.body;
     // const { title, image, address, description } = data;
-    const client = await MongoClient.connect(
-      "mongodb+srv://jason:Cao-xu870418-@cluster0.nezxxhh.mongodb.net/?retryWrites=true&w=majority"
-    );
+    const DB = process.env.DATABASE.replace("<password", process.env.PASSWORD);
+    const client = await MongoClient.connect(DB);
+
     const db = client.db("jason");
     const meetupsCollection = db.collection("meetups");
     const result = await meetupsCollection.insertOne(data);
