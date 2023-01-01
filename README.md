@@ -2,7 +2,7 @@
 
 ## Website URL
 
-project-travel-attraction-meetup.vercel.app
+dev-project-travel-attraction-meetup-next-9kv7ebnm4-jasoncaoau.vercel.app
 
 ## Available Scripts
 
