@@ -2,7 +2,7 @@
 
 ## Website URL
 
-dev-project-travel-attraction-meetup-next-js.vercel.app
+dev-project-travel-attraction-meetup-next-js-zvla.vercel.app
 
 ## Available Scripts
 
